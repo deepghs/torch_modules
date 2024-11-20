@@ -1,0 +1,10 @@
+hbutils>=0.9.0
+hfutils>=0.5.1
+pillow
+numpy<2
+scikit-learn
+huggingface_hub
+tqdm
+pandas
+scipy
+torch==1.13.1
