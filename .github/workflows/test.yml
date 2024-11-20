@@ -96,17 +96,6 @@ jobs:
           tree .
           cloc torch_modules
           cloc test
-      - name: Prepare dataset
-        uses: nick-fields/retry@v2
-        env:
-          CI: 'true'
-        with:
-          shell: bash
-          timeout_minutes: 20
-          max_attempts: 5
-          retry_on: any
-          command: |
-            make dataset
       - name: Run unittest
         env:
           CI: 'true'
